@@ -27,14 +27,7 @@ export default {
 
 }
 
-a {
-  font-weight: bold;
-  color: #686352;
 
-  &.router-link-exact-active {
-    color: #fdfcdd;
-  }
-}
 #container{
   margin-top: 1rem;
   margin-bottom: 1rem;

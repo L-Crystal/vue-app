@@ -48,9 +48,17 @@ footer {
   font-size: 0.4rem;
   height: 1rem;
   width: 100%;
-  background: #d1ba74;
+
   text-align: center;
   line-height: 1rem;
+  a {
+  font-weight: bold;
+  color: #686352;
+
+  &.router-link-exact-active {
+    color: #fdfcdd;
+  }
+}
   
 }
 

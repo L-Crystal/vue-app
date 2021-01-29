@@ -11,7 +11,7 @@
     <div id="carousel">
       <el-carousel :interval="4000" type="card" height="200px">
         <el-carousel-item v-for="item in carouselList" :key="item">
-          <img :src="item" alt="" />
+          <img :src="'https://images.weserv.nl/?url=' + item" alt="" />
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -21,7 +21,7 @@
           <ul>
             <li v-for="item in bookList" :key="item.id">
               <div class="img">
-                <img :src="item.cover.url" alt="" />
+                <img :src="'https://images.weserv.nl/?url=' + item.cover.url" alt="" />
               </div>
               <div class="content">
                 <h3>{{ item.title }}</h3>
@@ -45,7 +45,7 @@
             <el-row v-for="item in nonbookList" :key="item.id">
               <el-col :span="8">
                 <div class="grid-content">
-                  <img :src="item.cover.url" alt="" />
+                  <img :src="'https://images.weserv.nl/?url=' + item.cover.url" alt="" />
                 </div>
               </el-col>
               <el-col :span="16">
